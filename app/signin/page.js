@@ -33,6 +33,7 @@ function Page() {
             <h1 className="text-4xl font-bold text-white ">Scan the QR Code to Access the App</h1>
             <div>
                 <QrScanner
+                facingMode="environment"
                 ref={scannerRef}
                 onError={handleError}
                 onScan={handleScan}
